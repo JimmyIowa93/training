@@ -1,0 +1,164 @@
+ 
+LINUX ASSIGNMENT QUESTIONS 
+ 
+ 
+ 
+ 
+ 
+ 
+Consultadd Inc 
+Linux Assignment 
+@2020 
+ 
+ 
+Version1.0 
+BASIC LEVEL 
+1. What command is used to get the IP addresses of all interfaces on a server? 
+a  ifconfig
+2. What is the purpose of "mv" command? 
+a Move files or directories.. can be used to rename if both the files are on the same filesystem
+3. Which command is used to create a new empty file? 
+a touch
+4. Which command is used to display the contents of a directory? 
+a ls -a
+5. Which command is used to display all the file names along with their types of the current directory? 
+a ls -F
+6. Which command is used to clear the terminal? 
+a clear
+7. What are daemons? 
+a Runs as a background process to answer requests for service. Differentiated using a d at the end. 
+8. Which command is used to move to the parent directory? 
+a cd/
+9. What does echo command do? 
+a Used to display the lines of string/text passed as an argument. Inbuilt command used to output status texts to the file or the screen.
+10.How to display content of a file? 
+		a.cat
+11. How to identify which shell you are using? 
+		a. echo “$SHELL”
+12.How do you check if a particular service is running? 
+		a sudo systemctl status [servicename]
+13.What is the command to run a program with elevated permissions? 
+	a sudo
+14.Which command is used to display the path of the current working directory? 
+	a pwd
+15.How to delete a directory forcefully? 
+		a rm -rf [directoryname]
+
+16.Which command is used to switch from superuser to normal user? 
+		a. su
+17.How to switch to superuser (root) with elevated permissions? 
+		a. sudo -i sudo -s
+18.How to determine the type of a file? 
+		a. file etc
+ 
+ 
+Version1.0 
+INTERMEDIATE LEVEL 
+1. What are the different modes when using VI editor? 
+a Insert (entry) mode and Command Mode
+2. Which command is used to create multiple directories simultaneously? 
+a mkdir -p user/{dir1/{dir2, dir3}, dir4}
+3. What is LILO? 
+a Last in is the last out.. Elements removed from the top and inserted at the top
+4. How cd ~, cd / and cd - are different from each other? 
+a Cd ~: Navigate to the Home Directory
+b Cd /: Navigate to the root directory
+c Cd -: Navigate to the previous directory
+5. What is a grep command? 
+a Search plain text data sets for lines that match a regular expression
+6. If we are in the directory X and we are running rmdir X being in that directory X. Will this command successfully remove the directory or not? 
+a This won’t be able to remove the directory
+7. What are the contents of /usr/local? 
+a bin	include	jamf	lib	man	share
+8. Which command is used to display the current username?
+a  who
+9. What command is used to change your password? 
+a Sudo passwd root
+10. How to find the difference in two configuration files?
+a Diff file1 file2 
+11. How to find where a file is located in Linux? 
+a Find. 
+12. Which command shows the users that are logged in? 
+a W or who command
+13. How to forcefully stop a process which is running in the background? 
+a kill command or sudo pkill to kill all instances of a program
+14. Which command is used to list the name of files starting from any particular alphabet or string? 
+a ls -d *abc*
+15. How to move multiple files of the same extension to a different directory? 
+a. mv **/*.zip /path/to/single/target/directory/
+16. What command would you use to check how much memory is being used? 
+a free -m
+17. Which command is used to display the list of content in reverse order? 
+a tac command
+18. What command is used to show how long it's been since the server was rebooted? 
+a last reboot
+19. What command is used to change the ownership of a file? 
+a chown new_owner filename
+ 
+ 
+Version1.0 
+ADVANCED LEVEL 
+1. How to see the list of mounted devices on a Linux system? 
+? findmnt command
+2. How to check disk usage in terms of kilobytes(K), megabytes(M) and gigabytes(G)? 
+? df: 1 kb block
+? df -h: Mb or Gb blocks
+3. What is Swap Space?What is a typical size for a swap partition in Linux? 
+? Swap space is used when RAM is full, inactive pages in memory are moved to swap space. Swap Space is usually the root of the RAM. And in hibernation would be RAM size + Sq.Rt of RAM
+4. How would you schedule a task in Linux? 
+? at now + time interval
+5. How these commands would be working try and explain (files contain “hello” word) : 
+? grep -v -i hello file1.txt  
+? Nothing
+? grep -i hello file2.txt 
+? Displays Hello 
+? grep -A 2 hello file2.txt  
+? Nothing
+? grep -C 4 hello file1.txt  
+? Nothing
+? grep -B 3 hello file1.txt  
+? Nothing
+? ps -ef | more  
+? Displays the task manager in the current local directory
+? awk '{print $2,$5;}' employee.txt 
+? Displays nothing since there is nothing in the file after hello 
+6. What is the export command used for?(Give Example)
+? Export marks environment variable to be exported to child processes
+? Ensures if the environment variables and functions would be passed to the child processes. 
+7. Explain the redirection operator? 
+? Changes the standard I/O devices. 
+8. Which command is used to review boot messages? 
+? dmesg	
+9. Which command is used to change the permissions of a file?Explain its usage? 
+? chmod a(all) + r(read)w(write) filename
+10. Which command would you use to create a file system on a new hard drive? 
+? mkfs.<tab><tab>
+11. How to compress files in Linux? 
+? tar cfz file.tgz file
+12. Which file is used to automatically mount file systems on boot? 
+? wasp:/var/mail - /var/mail nfs - yes rw: Will mount var/mail on server wasp to var/mail to client with read and write permissions
+
+13. Find out the purpose of each of the following commands: 
+? shutdown : Shut down the system in safe mode
+? diff : stands for difference. It uses certain special symbols that are required to make two files identical
+? sort: Sort the files arranging the records in a order desired
+? ps: List current running processes and their PID’s with other information as desired. 
+? kill: Kill a process. 
+? Mount: Mount the files before accessing the files
+? nano : Nano is a text editor. 
+14. What are symbolic links?How do you create one using command? 
+? Symlink or soft link points to another file or directory
+? ln -s [Options] File Link
+15. How would you copy a file or a directory from your system to another system on the same network? 
+? scp – Putty Secure Copy Client
+? sftp – ftp <host>
+ 
+ 
+ 
+ 
+
+
+
+
+
+
