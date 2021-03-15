@@ -1,0 +1,214 @@
+1. a, b, c = 1, 2.01, 'string'
+
+2. c1 = 3 + 6j
+   c2 = 3
+   c1, c2 = c2, c1
+
+3. a = 5
+   b = 7
+   #with temp var
+   c = a+b
+   a = c - a
+   b = c - a
+   
+4. a = raw_input() #python2
+   b = input() #python3
+   print('Python2', a, 'Python3' , b)
+
+5. print("Please enter any 2 numbers (separated by Enter) between 1 - 10")
+   a = input()
+   b = input()
+   z = a + b
+   res = 30 + z
+   print("Final Output", res)
+
+6. a = input()
+   print("The Type of the input is", type(a))
+
+7. a = input("Please input the string here")
+b = input("Please enter 1 for lowerCamel, 2 for UpperCamel, 3 for snake_case")
+c = eval(b)
+a = a.lower()
+string_a = ""
+i = 0
+if c == 1:
+    while i in range(0,len(a)):
+        if a[i] == ' ':
+            i = i+1
+        elif a[i-1] ==' ':
+            data = str(a[i]).upper()
+            string_a = string_a + data
+            i = i+1
+        else:
+            data = str(a[i])
+            string_a = string_a + data
+            i = i+1
+elif c == 2:
+    while i in range(0,len(a)):
+        if i == 0:
+            data = a[i].upper()
+            string_a = string_a + data
+            i=i+1
+        elif a[i] == ' ':
+            i = i+1
+        elif a[i-1] ==' ':
+            data = str(a[i]).upper()
+            string_a = string_a + data
+            i = i+1
+        else:
+            data = str(a[i])
+            string_a = string_a + data
+            i = i+1
+elif c == 3:
+    string_a=a.replace(" ","_")
+else:
+    print("End of the World")
+print(string_a)
+
+8. Yes, the data would be updated since python is dynamic
+
+
+Task Two
+
+1. x = input("Please input the value of x")
+x = eval(x)
+if x%5 == 0 and x%3 == 0:
+   		 print("Consultadd")
+elif x%3 == 0:
+   		 print('Python Training')
+elif x%5 == 0:
+   		 print("Consultadd - Python Training")
+else:
+	print("Going into Existential dread")
+
+2. 
+if a in [1, 2, 3, 4, 5]:
+    x = eval(input("Please enter the first number"))
+    y = eval(input("Please enter the second number"))
+    if a == 1:
+        res = x + y
+    elif a == 2:
+        res = x - y
+    elif a == 3:
+        res = x/y
+    elif a == 4:
+        res = x*y
+    else:
+        first1 = eval(input("Please enter the third number"))
+        second2 = eval(input("Please enter the fourth number"))
+        res = (x + y + first1 + second2)/4
+    if res >= 0:
+        print(res)
+    else:
+        print("NEGATIVE")
+else:
+    print("Invalid Selection")
+
+3. 
+a, b, c = 10, 20, 30
+Avg = (a+b+c)/3
+If avg > a and avg> b and avg > c:
+	print("average is greater than a, b, c")
+else: 
+	if avg > a and avg > b:
+		print(" average is greater than a, b, c")
+	elif avg > a and avg > c:
+		print("avg is higher than a, c")
+	elif avg > b and avg > c:
+		print("avg is higher than b, c")
+	elif avg > a:
+		print("avg is just higher than a")
+	else:
+		if avg > b:
+			print("avg is just higher than b")
+		elif avg > c:
+			print("avg is just higher than c")
+
+4. 
+A = input()
+
+While a > 0:
+	print("Good going")
+print("It's over")
+
+5. Ans =[]
+For i in range (2002, 3200):
+	ans.append(i)
+	i += 7
+print(ans)
+
+6. 
+Will show error. Since integer is not iterable
+
+0
+error
+1
+error
+2
+
+0
+1
+2
+3
+4
+
+7.
+For I in range(0,6):
+	if I == 3:
+		continue
+	else:
+		print(I)
+
+8. Input = input()
+count_num, count_let = 0, 0
+For I in input:
+	if ord(I) <= 0 and ord(I) >= 9:
+		count_num += 1
+	if ord(I) >= 65 and ord(I) <= 122:
+		count_let += 1
+print("Letters", count_let, "Digits", count_let)
+
+9. #guess the lucky number (X)
+A = input()
+While True:
+	if A == X:
+		break
+Counter = 1
+While counter > 0:
+	print("Please input")
+	Answer = input()
+	if answer = "no":
+		break
+	elif answer == number:
+		break
+
+10. 
+Counter = 1
+While counter <= 5:
+	print(ÒType in theÓ, counter, ÒnumberÓ)
+	Num = input()
+	counter=counter+1
+	if num == lucky:
+		print("Good Guess")
+	else:
+		print("Please try again!")
+
+print("Game Over")
+
+		
+11.
+Counter = 1
+While counter <= 5:
+	print(ÒType in theÓ, counter, ÒnumberÓ)
+	Num = input()
+	counter=counter+1
+	if num == lucky:
+		print("Good Guess")
+		Break
+	else:
+		print("Please try again!")
+
+If counter == 5:
+	print("Sorry! That was not very successful")
+
+
